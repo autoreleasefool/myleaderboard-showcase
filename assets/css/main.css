@@ -1,0 +1,134 @@
+/* Variables
+/* ---------------------------------------------------------- */
+
+:root {
+  --color-background: #212B35;
+  --color-divider: #576574;
+  --color-text-primary: #F4F6F8;
+  --color-text-secondary: #F4F6F8b2;
+  --color-text-privacy-policy: #dddddd;
+  --color-text-highlight: #60BAFF;
+  --color-text-link: #feca57;
+  --color-text-link-hover: #ff9f43;
+
+  /* Fonts */
+  --font-header: Menlo, Courier, monospace;
+  --font-body: Menlo, Courier, monospace;
+  --font-light: 100;
+  --font-normal: 400;
+  --font-bold: 700;
+  --font-heavy: 800;
+
+  /* Sizes */
+  --margin: 2rem;
+
+  /* Content */
+  --content-width: 60rem;
+}
+
+/* General
+/* ---------------------------------------------------------- */
+
+body {
+  display: flex;
+  background: var(--color-background);
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  justify-content: center;
+}
+
+.viewport {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: var(--content-width);
+  margin: var(--margin);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--content-width);
+}
+
+.highlight {
+  color: var(--color-text-highlight);
+}
+
+a {
+  color: var(--color-text-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-text-link-hover);
+  text-decoration: none;
+}
+
+/* Content
+/* ---------------------------------------------------------- */
+
+.title {
+  margin-bottom: var(--margin);
+}
+
+.description {
+  justify-content: center;
+  text-align: justify;
+  margin-bottom: var(--margin);
+}
+
+.description div.divider {
+  background-color: var(--color-divider);
+  height: 1pt;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: var(--margin);
+  margin-right: var(--margin);
+  width: calc(100% - var(--margin) * 2);
+}
+
+.app-store-badge {
+  display: flex;
+  margin: var(--margin);
+  justify-content: center;
+}
+
+.screenshots img {
+  margin-left: var(--margin);
+  margin-right: var(--margin);
+  width: calc(100% - var(--margin) * 2);
+}
+
+/* Privacy
+/* ---------------------------------------------------------- */
+
+.privacy-policy {
+  font-family: sans-serif !important;
+}
+
+.privacy-policy p,
+.privacy-policy li {
+  color: var(--color-text-privacy-policy);
+}
+
+/* Footer
+/* ---------------------------------------------------------- */
+
+.foot {
+  margin-top: calc(var(--margin) * 4);
+  max-width: var(--content-width);
+}
+
+.foot a {
+  color: var(--color-text-link);
+}
+
+.disclaimer {
+  margin-top: var(--margin);
+}
+
+.subdued {
+  font-size: 0.7em;
+  color: var(--color-text-secondary);
+}

@@ -1,0 +1,17 @@
+<footer class="foot">
+    {% if page.url == '/' %}
+    <p>
+      <a href="/privacy.html">privacy policy</a>
+    </p>
+    {% else %}
+    <p>
+      <a href="/">home</a>
+    </p>
+    {% endif %}
+    <p>
+      &copy; {{ page.date | date: "%Y" }}
+      <a href="https://josephroque.dev"
+        ><span class="highlight">Joseph Roque</span></a
+      >
+    </p>
+  </footer>
